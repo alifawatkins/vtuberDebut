@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Tilt Neon', cursive;
+    font-size: xx-large;
 }
 
 body {
@@ -11,9 +12,10 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-color: #ff934e;
+    background-image: url("./Assets/StreamerDesk.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .container {
@@ -21,17 +23,18 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    width: 800px;
-    max-width: 80%;
+    width: 1000px;
+    max-width: 100%;
     background-color: #fff8f2;
-    padding: 10px;
+    padding: 50px;
     border-radius: 5px;
     box-shadow: 0 0 10px 2px;
 }
 
 .btn-flex {
-    display: flexbox;
-    justify-content: space-evenly;
+    display: grid;
+    flex-direction: column;
+    justify-content: stretch;
     gap: 10px;
     margin-top: 20px;
 }
