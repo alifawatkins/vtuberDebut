@@ -1,5 +1,4 @@
 
-
 // Create a vTuber Class
 class VTuber {
     constructor(name, gender, species, birthday, age, modelType, streamerType) {
@@ -33,7 +32,7 @@ let totalFame = 0;
 const gameOptions = {
     streamingPlatform: {
         text: 'Chose a Streaming Platform for VTubing',
-        image: './Assets/twitch_youtube_tiktok.png',
+        image: './Assets/streamingplatforms.png',
         explainer: 'Many VTubers stream across multiple platforms, including YouTube, Twitch, and even TikTok (to name a few), each with its own pros and cons. Twitch is the largest platform for live-streaming, with most of the content built around video games. Twitch also has a thriving community atmosphere. <br><br> Conversely, YouTube was made for uploading lasting content. It has a search engine that helps newer streamers find an audience, though it lacks a close-knit community. Finally, TikTok has a high conversion rate when converting your TikTok short-videos audience to your live stream audience, so building your audience on TikTok and later moving them to other platforms like YouTube/Twitch is a great strategy.',
         fame: 100,
         
@@ -75,7 +74,7 @@ const gameOptions = {
     },
     vTuberCommunity: {
         text: `Build your VTuber Community`,
-        image: `./Assets/Community.png`,
+        image: `./Assets/community1.png`,
         explainer: `As the saying goes, no one lives in a vacuum, and the same goes for VTubers. So start building your community and become friends with other VTubers by following and interacting with VTubers you like and admire. Interact with their tweets and also visit their live streams and say hello. You can also join VTuber communities on Discord, Reddit, and Facebook.`,
         fame: 250,
     },
@@ -167,6 +166,7 @@ function startGame() {
         document.getElementById('text').innerHTML = `You decide not to become a VTuber and live out the rest of your life as a really boring human being. The End.`
         document.getElementById(`option-buttons`).innerHTML = '';
         document.body.style.backgroundImage = `url('./Assets/boringlife1.png')`;
+        document.getElementById(`option-buttons`).innerHTML =`<button class="btn" onClick="startGame()">I've changed my mind!</button>`
         return
     } 
 }
@@ -203,6 +203,7 @@ function endGame() {
 
 function playAgain() {
     currentQ = 1; 
+    document.body.style.backgroundImage = '';
     document.getElementById('text').innerHTML = `Would you like to play again?`
     document.getElementById(`option-buttons`).innerHTML =`<button class="btn" onClick="startGame()">Yes</button><button class="btn" onClick="endGame()">No</button>`
 }
