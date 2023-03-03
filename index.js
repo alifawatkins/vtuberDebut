@@ -42,19 +42,19 @@ const gameOptions = {
         text: `Create your VTuber Model`,
         image: `./Assets/PNG_2D_3D.png`,
         explainer: `There are three options to choose from when it comes to your VTuber avatar: PNG, 2D, or a 3D model. Whichever you choose will be a matter of personal preference and budget. You can make your own avatar using your own art skills and inexpensive/free programs ($), buy a pre-made model ($$), or commission someone to make you a custom avatar ($$$). <br><br> A PNG Model is a still image of your avatar. Many streamers use a PNG avatar when just starting out because it is the simplest and least expensive way of VTubing. However, PNG models are also the least engaging and entertaining because they can't move or have facial expressions. If you want to make your own PNG, you'll need to draw one in an image editing software. <br><br> A 2D VTuber avatar comprises flat, 2D art that has been "rigged" to move and is the most expensive option. Using a 2D model is one of the most popular choices for VTubing among VTubers because of their pleasing aesthetics (resembling anime characters), uniqueness (because they are highly customizable), and vibrant expressions. <br><br> 3D VTuber avatars are also trendy. A 3D VTuber model can be tracked from many angles because it is a three-dimensional object that is very immersive and engaging. There are several free options to make your own 3D model available. However, 2D and 3D models require extra face-tracking software to stream with them (e.g., VSeeFace, VTube Studio, etc.), unlike with PNGs. Again, different free and paid options exist for this, and availability is based on your computer's operating system (PC or Mac).`,
-        fame: 100,
+        fame: 150,
     },
     characterLore: {
         text: `Write your VTuber Character's Lore`,
         image: `./Assets/Gawr_Gura_Lore.png`,
         explainer: `VTuber lore is your persona's backstory. While you don't need official lore, it can help make your character more interesting, personal, and unique and contribute to your channel's overall aesthetic and branding. Having a defined lore also helps some streamers get into character easier. Lore can include topics such as your character's likes and dislikes, goals and aspirations, race (for example, are they a part of the human race or another fantasy-based race like faeries or aliens), age (e.g., if they are an adult or child), and occupation (usually tied into their appearance/attire- like a persona who is royalty would dress in fancy/lavish clothing).`,
-        fame: 100,
+        fame: 200,
     }, 
     assetsOverlays: {
         text: `Create/Curate/Commission your VTuber Assets and Overlays`,
         image: `./Assets/VTuber_Assets_and_Overlays.png`,
         explainer: `Examples of VTuber assets include custom emotes for your channels; animated or static "Stream Starting," "Be Right Back, and "Streaming Ending" screens; background music (BGM); logos; and Twitch/YouTube alerts. Overlays are the main backdrops Vtubers use on their streaming software. There are different types of overlays, like minimalist overlays with simple elements and a clean theme, overlays that are detailed with several custom elements, or overlays with illustrative themes. While Twitch overlays are not required for live streaming, they can improve your viewers' experience and create engagement between yourself and your audience. <br><br> You can buy pre-made assets and overlays online (like on Etsy) or commission artists to create custom designs. There are tons of ways to get free Vtuber assets and overlays. You can also create your own using programs such as Canva.`,
-        fame: 100,
+        fame: 250,
     },
     socialMedia: {
         text: `Create a Social Media Presence`,
@@ -65,25 +65,25 @@ const gameOptions = {
         <li>Posting fun and personality-revealing content to show people what you're all about.</li>
         <li>Giving people an idea of what they can expect from your streams (e.g., what genre/games you'll be playing, if you're doing commissioned art streams, what type of karaoke songs you like to sing, etc.).</li>
         </ul>`,
-        fame: 100,
+        fame: 400,
     },
     debutContent: {
         text: `Plan your Debut Content`,
         image: `./Assets/Plan_your_Debut.png`,
         explainer: `Come up with some ideas on what you will do on your VTuber debut. Most VTubers use their debut to showcase their models from foot to head, display their VTuber assets and overlays, and introduce themselves with details such as their character's height, age, race, likes and dislikes, lore, and fun facts. Try creating a rough schedule of your debut while allowing yourself time to answer questions and chatting with your audience.`,
-        fame: 100,
+        fame: 200,
     },
     vTuberCommunity: {
         text: `Build your VTuber Community`,
         image: `./Assets/Community.png`,
         explainer: `As the saying goes, no one lives in a vacuum, and the same goes for VTubers. So start building your community and become friends with other VTubers by following and interacting with VTubers you like and admire. Interact with their tweets and also visit their live streams and say hello. You can also join VTuber communities on Discord, Reddit, and Facebook.`,
-        fame: 100,
+        fame: 250,
     },
     dryRun: {
         text: `Set up Your Gear, Test, and Practice`,
         image: `./Assets/dryrun.png`,
         explainer: `To make your debut as smooth and stress-free as possible, set up all of your gear and do test recordings. VTubers predominantly need to rely on tech, so ensure everything is working as it should before you go live. You can set up all of your scenes and sources ahead of time in most streaming software, including any VTuber software you'll use. If you've never streamed before, you can practice by recording yourself, watching the footage, and checking what you need to improve. As with everything in this world, practice makes progress!`,
-        fame: 100,
+        fame: 300,
     },
 }
 
@@ -118,14 +118,14 @@ function createMascotPrompts() {
 function question() {
     document.body.style.backgroundImage = '';
     if(currentQ == 1){
-        alert(`Your VTuber debut is in 8 Days! Each day, you can choose what to work on to make it a roaring success.
-        A VTuber Debut is simply when you stream with your VTuber for the first time. While having an official debut is optional, some VTubers like to amass followers on social media platforms before their debut to have a grander audience. Although on average, VTubers plan their debuts between a few weeks to a couple of months ahead.`);
-    } else if (currentQ == 9) {
-        alert(`You did it!`)
-        playAgain();
+        alert(`A VTuber Debut is simply when you stream with your VTuber for the first time. While having an official debut is optional, some VTubers like to amass followers on social media platforms before their debut to have a grander audience. On average, VTubers plan their debuts between a few weeks to a couple of months ahead.
+        But you're too excited to wait that long, so your VTuber debut is in 5 Days! Each day, you can choose what to work on to make it a roaring success. Unfortunatley, you can't do everything you would ideally want to do beforehand, so you must pick and choose what you want to get done. You can also do the same activity more than once. But choose wisely! Your choices affect the outcome of your debut.`);
+    } else if (currentQ == 6) {
+        alert(`You did it! You have officially debuted as a Vtuber. It's the day after and you take a look at your stream analytics. Let's see how you did!`)
+        checkFame();
         return
     } else {
-        alert(`Good work today! You have ${9-currentQ} days left until your Debut.`)
+        alert(`Good work today! You have ${6-currentQ} days left until your Debut.`)
     }
     currentQ++;
     document.getElementById('text').innerHTML = `What would you like to work on today?`
@@ -166,10 +166,35 @@ function startGame() {
         // The game will end.
         document.getElementById('text').innerHTML = `You decide not to become a VTuber and live out the rest of your life as a really boring human being. The End.`
         document.getElementById(`option-buttons`).innerHTML = '';
-        document.body.style.backgroundImage = `url('./Assets/boringlife.jpg')`;
+        document.body.style.backgroundImage = `url('./Assets/boringlife1.png')`;
         return
     } 
 }
+
+function checkFame() {
+    if (totalFame <= 700) {
+        // Lowest tier fame points
+        document.getElementById('text').innerHTML = `Your debut went okay. You had a pretty small turn out, but that's okay! Keep streaming and improving and maybe, just maybe, someday, you'll make it to the big leagues. The End.`
+        document.getElementById(`option-buttons`).innerHTML = '';
+        document.body.style.backgroundImage = `url('./Assets/lowtier.png')`;
+        document.getElementById(`option-buttons`).innerHTML =`<button class="btn" onClick="playAgain()">Continue</button>`
+        return
+    } else if (totalFame > 700 && totalFame < 1201) {
+        // Mid tier fame points
+        document.getElementById('text').innerHTML = `Your debut went pretty well. You had a decent turn out, and gained lots of followers. Keep the momentum up, and you'll be in the big leagues in no time! The End.`
+        document.getElementById(`option-buttons`).innerHTML = '';
+        document.body.style.backgroundImage = `url('./Assets/midtier.png')`;
+        document.getElementById(`option-buttons`).innerHTML =`<button class="btn" onClick="playAgain()">Continue</button>`
+        return
+    } else {
+        // Highest tier fame points.
+        document.getElementById('text').innerHTML = `Your debut was a ROARING SUCCESS!! You had a HUGE crowd of followers at your debut and hundreds more follow during and even after your debut. You're a VTuber star and make Affiliate/Partner pretty quickly. Now you can stream full-time AND pay your bills. Congrats! The End.`
+        document.getElementById(`option-buttons`).innerHTML = '';
+        document.body.style.backgroundImage = `url('./Assets/hightier.png')`;
+        document.getElementById(`option-buttons`).innerHTML =`<button class="btn" onClick="playAgain()">Continue</button>`
+        return;
+    }
+};
 
 function endGame() {
     document.getElementById('text').innerHTML = `Thank you for playing!`
