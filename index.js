@@ -119,7 +119,6 @@ function question() {
     document.body.style.backgroundImage = '';
     if(currentQ == 1){
         alert(`Your VTuber debut is in 8 Days! Each day, you can choose what to work on to make it a roaring success.
-        
         A VTuber Debut is simply when you stream with your VTuber for the first time. While having an official debut is optional, some VTubers like to amass followers on social media platforms before their debut to have a grander audience. Although on average, VTubers plan their debuts between a few weeks to a couple of months ahead.`);
     } else if (currentQ == 9) {
         alert(`You did it!`)
