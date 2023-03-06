@@ -163,7 +163,7 @@ function startGame() {
 
     } else {
         // The game will end.
-        document.getElementById('text').innerHTML = `You decide not to become a VTuber and live out the rest of your life as a really boring human being. The End.`
+        document.getElementById('text').innerHTML = `You decide not to become a VTuber and live out the rest of your life as a really boring human being. Ending 0/3`
         document.getElementById(`option-buttons`).innerHTML = '';
         document.body.style.backgroundImage = `url('./Assets/boringlife1.png')`;
         document.getElementById(`option-buttons`).innerHTML =`<button class="btn" onClick="startGame()">I've changed my mind!</button>`
@@ -174,21 +174,21 @@ function startGame() {
 function checkFame() {
     if (totalFame <= 700) {
         // Lowest tier fame points
-        document.getElementById('text').innerHTML = `Your debut went okay. You had a pretty small turn out, but that's okay! Keep streaming and improving and maybe, just maybe, someday, you'll make it to the big leagues. The End.`
+        document.getElementById('text').innerHTML = `Your debut went okay. You had a pretty small turn out, but that's okay! Keep streaming and improving and maybe, just maybe, someday, you'll make it to the big leagues. Ending 1/3.`
         document.getElementById(`option-buttons`).innerHTML = '';
         document.body.style.backgroundImage = `url('./Assets/lowtier.png')`;
         document.getElementById(`option-buttons`).innerHTML =`<button class="btn" onClick="playAgain()">Continue</button>`
         return
     } else if (totalFame > 700 && totalFame < 1201) {
         // Mid tier fame points
-        document.getElementById('text').innerHTML = `Your debut went pretty well. You had a decent turn out, and gained lots of followers. Keep the momentum up, and you'll be in the big leagues in no time! The End.`
+        document.getElementById('text').innerHTML = `Your debut went pretty well. You had a decent turn out, and gained lots of followers. Keep the momentum up, and you'll be in the big leagues in no time! Ending 2/3.`
         document.getElementById(`option-buttons`).innerHTML = '';
         document.body.style.backgroundImage = `url('./Assets/midtier.png')`;
         document.getElementById(`option-buttons`).innerHTML =`<button class="btn" onClick="playAgain()">Continue</button>`
         return
     } else {
         // Highest tier fame points.
-        document.getElementById('text').innerHTML = `Your debut was a ROARING SUCCESS!! You had a HUGE crowd of followers at your debut and hundreds more follow during and even after your debut. You're a VTuber star and make Affiliate/Partner pretty quickly. Now you can stream full-time AND pay your bills. Congrats! The End.`
+        document.getElementById('text').innerHTML = `Your debut was a ROARING SUCCESS!! You had a HUGE crowd of followers at your debut and hundreds more follow during and even after your debut. You're a VTuber star and make Affiliate/Partner pretty quickly. Now you can stream full-time AND pay your bills. Congrats! Ending 3/3.`
         document.getElementById(`option-buttons`).innerHTML = '';
         document.body.style.backgroundImage = `url('./Assets/hightier.png')`;
         document.getElementById(`option-buttons`).innerHTML =`<button class="btn" onClick="playAgain()">Continue</button>`
