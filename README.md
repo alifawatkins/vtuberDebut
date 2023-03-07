@@ -46,7 +46,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-[![VTuber Debut Screen Shot][product-screenshot]](https://cdn.discordapp.com/attachments/736004592139108455/1082459969825292368/Screenshot_2023-03-06_at_7.19.00_PM.png)
+![VTuber Debut Screen Shot][product-screenshot]
 
 Inspired by "Choose Your Own Adventure" games, VTuber Debut follows our protagonist as they prepare to become a VTuber. In the game, the player has 5 days until their debut, and must decide what activities to work on each day in order to make their debut a success, starting with creating a Vtuber persona/character. Your choices each day affect the outcome of your debut. 
 
